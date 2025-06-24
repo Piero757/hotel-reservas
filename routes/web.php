@@ -9,6 +9,11 @@ use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\StripeController;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 // Página principal
 Route::get('/', function () {
     return Inertia::render('Welcome', [
